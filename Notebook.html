@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/notebook.css">
+    <title>Notebook</title>
+</head>
+
+<body>
+    <main id="main-page">
+
+        <h3 id="main-title">Notebook</h3>
+
+        <div id="formatters">
+            <select id="font-type" class="dropdown" onchange="changeFontType(this)">
+            <option value="Arial">Arial</option>
+            <option value="Brush Script M7">Brush Script M7</option>
+            <option value="Copperplate">Copperplate</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Lucida Console">Lucida Console</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Lucida Handwriting">Lucida Handwriting</option>
+            <option value="Papyrus">Papyrus</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+        </select>
+            <select id="font-size" class="dropdown" onchange="changeFontSize(this)">
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">16</option>
+            <option value="14">22</option>
+            <option value="16">28</option>
+            <option value="18">32</option>
+            <option value="20">56</option>
+            <option value="22">64</option>
+        </select>
+            <button id="bold" class="format-button" value="bold" onclick="makeBold()">B</button>
+            <button id="italic" class="format-button" value="italic" onclick="makeItalic()">I</button>
+            <button id="underline" class="format-button" value="underline" onclick="makeUnderline()">U</button>
+        </div>
+
+        <div class="textarea">
+            <textarea name="word-text" id="text-box"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button value="reset" onclick="resetText()" class="buttons">Reset</button>
+            <button type="reset" value="clear" class="buttons">Clear</button>
+        </div>
+    </main>
+</body>
+<script src="JS/notebook.js">
+</script>
+
+</html>
